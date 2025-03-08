@@ -1,0 +1,23 @@
+name: pages-build-deployment
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Jekyll
+        uses: actions/setup-jekyll@v2
+
+      - name: Create docs directory
+        run: mkdir -p /github/workspace/docs
+
+      - name: Build site
+        run: bundle exec jekyll build
