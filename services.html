@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Services - Laurenz Cultura</title>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav>
+  <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+    Laurenz <span>Cultura</span>
+  </div>
+  <div class="nav-container">
+    <div class="links">
+      <a href="index.html" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">Home</a>
+      <a href="skills.html" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">Skills</a>
+      <a href="about.html" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">About</a>
+      <a href="services.html" class="active" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">Services</a>
+      <a href="contact.html" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">Contact</a>
+    </div>
+  </div>
+  <i class="fa-solid fa-bars hamburg" onclick="toggleMenu()"></i>
+  <div class="dropdown">
+    <div class="links">
+      <a href="index.html">Home</a>
+      <a href="skills.html">Skills</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+      <i class="fa-solid fa-xmark cancel" onclick="toggleMenu()"></i>
+    </div>
+  </div>
+</nav>
+
+<!-- Main Content -->
+<main>
+
+  <!-- Services Section -->
+  <section id="services">
+    <div class="section-container">
+      <h2 data-aos="fade-up" data-aos-duration="1500">My Services</h2>
+      <div class="services-grid" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fa-solid fa-code"></i>
+          </div>
+          <h3>Web Development</h3>
+          <p>Building responsive and user-friendly websites with modern technologies like React, Vue, and Node.js.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fa-solid fa-palette"></i>
+          </div>
+          <h3>UI/UX Design</h3>
+          <p>Creating intuitive and engaging user interfaces with Figma and Adobe XD.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fa-solid fa-mobile"></i>
+          </div>
+          <h3>Mobile Development</h3>
+          <p>Developing cross-platform mobile applications using Flutter and React Native.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience">
+    <div class="section-container">
+      <h2 data-aos="fade-up" data-aos-duration="1500">Professional Experience</h2>
+      <div class="experience-card" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+        <h3>Web Developer</h3>
+        <p class="company">Lunar Esports Team</p>
+        <p class="duration">2022 - Present</p>
+        <ul>
+          <li>Developed and maintained responsive websites</li>
+          <li>Implemented modern frontend architectures</li>
+          <li>Collaborated with design teams</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section id="certifications">
+    <div class="section-container">
+      <h2 data-aos="fade-up" data-aos-duration="1500">My Certifications</h2>
+      <div class="certifications-grid" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+        <div class="certification-card">
+          <div class="cert-image">
+            <img src="java.png" alt="Java Foundation">
+          </div>
+          <div class="cert-details">
+            <h3>Java Foundation</h3>
+            <p class="issuer">Oracle</p>
+            <p class="date">Issued: December 2024</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2024 Laurenz Cultura. All rights reserved.</p>
+</footer>
+
+<!-- Scripts -->
+<script src="script.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({ offset: 0, duration: 1000 });
+</script>
+
+</body>
+</html>
