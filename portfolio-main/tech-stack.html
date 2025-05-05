@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Mac Laurenz Cultura | Tech Stack</title>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+            Laurenz <span>Cultura</span>
+        </div>
+        <div class="nav-container">
+            <div class="links">
+                <a href="index.html" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">Home</a>
+                <a href="tech-stack.html" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">Tech Stack</a>
+                <a href="about.html" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">About</a>
+                <a href="services.html" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">Services</a>
+                <a href="contact.html" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">Contact</a>
+            </div>
+        </div>
+        <i class="fa-solid fa-bars hamburg" onclick="toggleMenu()"></i>
+        <div class="dropdown">
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="tech-stack.html">Tech Stack</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="toggleMenu()"></i>
+            </div>    
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2 data-aos="fade-up" data-aos-duration="1500">Tech Stack</h2>
+            <div class="skills-container" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+                <div class="skill-card">
+                    <i class="fa-brands fa-html5"></i>
+                    <h3>HTML</h3>
+                    <p>Proficient in creating structured and semantic HTML.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <h3>CSS</h3>
+                    <p>Skilled in styling and responsive design.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-brands fa-js"></i>
+                    <h3>JavaScript</h3>
+                    <p>Experienced in building interactive web applications.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-brands fa-react"></i>
+                    <h3>React</h3>
+                    <p>Experienced in building dynamic web applications.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-brands fa-bootstrap"></i>
+                    <h3>Bootstrap</h3>
+                    <p>Skilled in using Bootstrap for responsive design.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer (now sticks to the bottom) -->
+    <footer>
+        <p>&copy; 2024 Laurenz Cultura. All rights reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({ offset: 0, duration: 1000 });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+            const navLinks = document.querySelectorAll('nav .links a, .dropdown .links a');
+            
+            navLinks.forEach(link => {
+                const linkPage = link.getAttribute('href');
+                if (linkPage === currentPage) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
