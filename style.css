@@ -298,6 +298,31 @@ section {
     .certifications img {
         max-width: 90%;
     }
+
+    .main-container {
+        flex-direction: column; /* Stack content and image */
+    }
+
+    .image {
+        order: -1; /* Move image to the top */
+        margin-bottom: 30px; /* Add some space below the image */
+    }
+
+    .main-container .content {
+        text-align: center; /* Center the text below the image */
+    }
+
+    .main-container .content h1 {
+        font-size: 2.5rem;
+    }
+
+    .typewriter {
+        font-size: 2rem;
+    }
+
+    .main-container .content p {
+        font-size: 1.2rem;
+    }
 }
 .certifications {
     display: flex;
@@ -398,31 +423,5 @@ footer {
 
     #about h2 {
         font-size: 2.5rem;
-    }
-}
-
-@media (max-width: 576px) {
-    .main-container .content h1 {
-        font-size: 2.5rem;
-    }
-
-    .typewriter {
-        font-size: 2rem;
-    }
-
-    .main-container .content p {
-        font-size: 1.2rem;
-    }
-
-    .about-content {
-        padding: 25px 15px;
-    }
-
-    .about-content p {
-        font-size: 1rem;
-    }
-
-    #about h2 {
-        font-size: 2rem;
     }
 }
