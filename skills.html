@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Laurenz Cultura - Portfolio</title>
 </head>
+
 <body>
     <!-- Navigation -->
     <nav>
@@ -21,7 +23,8 @@
                 <a href="skills.html" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">Skills</a>
                 <a href="about.html" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">About</a>
                 <a href="services.html" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">Services</a>
-                <a href="certifications.html" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">Certifications</a>
+                <a href="certifications.html" data-aos="fade-up" data-aos-duration="1500"
+                    data-aos-delay="500">Certifications</a>
                 <a href="contact.html" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600">Contact</a>
             </div>
         </div>
@@ -32,10 +35,10 @@
                 <a href="about.html">About</a>
                 <a href="skills.html">Skills</a>
                 <a href="services.html">Services</a>
-                <a href="certifications.html">Certifications</a> 
+                <a href="certifications.html">Certifications</a>
                 <a href="contact.html">Contact</a>
                 <i class="fa-solid fa-xmark cancel" onclick="toggleMenu()"></i>
-            </div>    
+            </div>
         </div>
     </nav>
 
@@ -70,6 +73,56 @@
                     <h3>Bootstrap</h3>
                     <p>Skilled in using Bootstrap for responsive design.</p>
                 </div>
+                <div class="skill-card">
+                    <i class="fa-brands fa-flutter"></i>
+                    <h3>Flutter</h3>
+                    <p>Experienced in building cross-platform mobile applications.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-brands fa-git-alt"></i>
+                    <h3>Git</h3>
+                    <p>Proficient in version control and collaboration.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-brands fa-envira"></i>
+                    <h3>MongoDB</h3>
+                    <p>Experience with NoSQL databases and schema design.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-brands fa-node-js"></i>
+                    <h3>Node.js</h3>
+                    <p>Skilled in server-side development and API creation.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-brands fa-android"></i>
+                    <h3>Android Studio</h3>
+                    <p>Proficient in Android app development tools.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-solid fa-fire"></i>
+                    <h3>Firebase</h3>
+                    <p>Experience with backend-as-a-service and real-time databases.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-solid fa-bullseye"></i>
+                    <h3>Dart</h3>
+                    <p>Proficient in Dart for cross-platform development.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-brands fa-php"></i>
+                    <h3>PHP</h3>
+                    <p>Experience with server-side scripting and dynamic web pages.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-solid fa-database"></i>
+                    <h3>MySQL</h3>
+                    <p>Proficient in relational database management.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-solid fa-file-code"></i>
+                    <h3>SQLite</h3>
+                    <p>Experience with lightweight, serverless database engines.</p>
+                </div>
             </div>
         </section>
     </main>
@@ -86,10 +139,10 @@
         AOS.init({ offset: 0, duration: 1000 });
     </script>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const currentPage = window.location.pathname.split('/').pop() || 'index.html';
             const navLinks = document.querySelectorAll('nav .links a, .dropdown .links a');
-            
+
             navLinks.forEach(link => {
                 const linkPage = link.getAttribute('href');
                 if (linkPage === currentPage) {
@@ -99,4 +152,5 @@
         });
     </script>
 </body>
+
 </html>
