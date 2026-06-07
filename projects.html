@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projects by Laurenz Cultura — A showcase of web, mobile, and UI/UX projects built with modern technologies.">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Mac Laurenz Cultura | Projects</title>
+</head>
+
+<body>
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">
+            Laurenz <span>Cultura</span>
+        </div>
+        <div class="nav-container">
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="tech-stack.html">Tech Stack</a>
+                <a href="services.html">Services</a>
+                <a href="certifications.html">Certifications</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <i class="fa-solid fa-bars hamburg" onclick="toggleMenu()"></i>
+        <div class="dropdown">
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="tech-stack.html">Tech Stack</a>
+                <a href="services.html">Services</a>
+                <a href="certifications.html">Certifications</a>
+                <a href="contact.html">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="toggleMenu()"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <section id="projects">
+            <div class="section-container">
+                <h2 data-aos="fade-up" data-aos-duration="1500">My Projects</h2>
+                <p style="text-align:center; color: var(--text-muted); margin-top: -2rem; margin-bottom: 2rem;"
+                    data-aos="fade-up" data-aos-delay="100">A collection of things I've designed and built</p>
+
+                <div class="projects-grid" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+
+                    <!-- Project 1 -->
+                    <div class="project-card">
+                        <div class="project-img-placeholder" style="background: linear-gradient(135deg, rgba(139,92,246,0.2), rgba(6,182,212,0.2));">
+                            🌐
+                        </div>
+                        <div class="project-body">
+                            <h3>Portfolio Website</h3>
+                            <p>My personal portfolio website showcasing my skills, projects, certifications, and services. Built with vanilla HTML, CSS, and JavaScript with smooth animations.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">HTML</span>
+                                <span class="project-tag">CSS</span>
+                                <span class="project-tag">JavaScript</span>
+                                <span class="project-tag">AOS</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Ryenzo" target="_blank" rel="noopener noreferrer" class="project-link github">
+                                    <i class="fa-brands fa-github"></i> GitHub
+                                </a>
+                                <a href="#" class="project-link demo">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card">
+                        <div class="project-img-placeholder" style="background: linear-gradient(135deg, rgba(6,182,212,0.2), rgba(139,92,246,0.2));">
+                            📱
+                        </div>
+                        <div class="project-body">
+                            <h3>Lunar Esports Mobile App</h3>
+                            <p>A cross-platform mobile application for the Lunar Esports team. Features team announcements, match schedules, and player stats with an intuitive UI/UX design.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Flutter</span>
+                                <span class="project-tag">Dart</span>
+                                <span class="project-tag">Firebase</span>
+                                <span class="project-tag">UI/UX</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Ryenzo" target="_blank" rel="noopener noreferrer" class="project-link github">
+                                    <i class="fa-brands fa-github"></i> GitHub
+                                </a>
+                                <a href="#" class="project-link demo">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card">
+                        <div class="project-img-placeholder" style="background: linear-gradient(135deg, rgba(139,92,246,0.15), rgba(16,185,129,0.2));">
+                            🛒
+                        </div>
+                        <div class="project-body">
+                            <h3>Web Application Project</h3>
+                            <p>A full-stack web application with user authentication, database integration, and a modern responsive interface. Built using modern frameworks and best practices.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">React</span>
+                                <span class="project-tag">Node.js</span>
+                                <span class="project-tag">MongoDB</span>
+                                <span class="project-tag">REST API</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Ryenzo" target="_blank" rel="noopener noreferrer" class="project-link github">
+                                    <i class="fa-brands fa-github"></i> GitHub
+                                </a>
+                                <a href="#" class="project-link demo">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Add More Project Card (Placeholder) -->
+                    <div class="project-card" style="border-style: dashed; background: transparent; align-items: center; justify-content: center; min-height: 300px;">
+                        <div style="text-align:center; padding: 2rem; color: var(--text-muted);">
+                            <i class="fa-solid fa-plus" style="font-size: 2.5rem; margin-bottom: 1rem; opacity: 0.4;"></i>
+                            <p style="margin: 0;">More projects coming soon...</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; <span class="footer-year"></span> Laurenz Cultura. All rights reserved.</p>
+    </footer>
+
+    <!-- Back to Top -->
+    <button id="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <!-- Scripts -->
+    <script src="assets/js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({ offset: 0, duration: 1000 });
+    </script>
+</body>
+
+</html>

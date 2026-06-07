@@ -4,14 +4,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Services offered by Laurenz Cultura — Web Development, UI/UX Design, and Mobile Development, plus professional experience.">
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
-  <title>Mac Laurenz Cultura | Service</title>
+  <title>Mac Laurenz Cultura | Services</title>
 </head>
 
 <body>
+  <!-- Scroll Progress Bar -->
+  <div id="scroll-progress"></div>
 
   <!-- Navigation -->
   <nav>
@@ -22,8 +26,9 @@
       <div class="links">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
         <a href="tech-stack.html">Tech Stack</a>
-        <a href="services.html" class="active">Services</a>
+        <a href="services.html">Services</a>
         <a href="certifications.html">Certifications</a>
         <a href="contact.html">Contact</a>
       </div>
@@ -33,6 +38,7 @@
       <div class="links">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
         <a href="tech-stack.html">Tech Stack</a>
         <a href="services.html">Services</a>
         <a href="certifications.html">Certifications</a>
@@ -66,7 +72,7 @@
           </div>
           <div class="service-card">
             <div class="service-icon">
-              <i class="fa-solid fa-mobile"></i>
+              <i class="fa-solid fa-mobile-screen"></i>
             </div>
             <h3>Mobile Development</h3>
             <p>Developing cross-platform mobile applications using Flutter and React Native.</p>
@@ -79,15 +85,29 @@
     <section id="experience">
       <div class="section-container">
         <h2 data-aos="fade-up" data-aos-duration="1500">Professional Experience</h2>
-        <div class="experience-card" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
-          <h3>Web Developer</h3>
-          <p class="company">Lunar Esports Team</p>
-          <p class="duration">2022 - Present</p>
-          <ul>
-            <li>Developed and maintained responsive websites</li>
-            <li>Implemented modern frontend architectures</li>
-            <li>Collaborated with design teams</li>
-          </ul>
+        <div class="timeline" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+          <div class="timeline-item">
+            <h3>Web Developer</h3>
+            <p class="company">Lunar Esports Team</p>
+            <p class="duration">2022 – Present · Full-time</p>
+            <ul>
+              <li>Developed and maintained the team's official website with responsive layouts</li>
+              <li>Designed and built a cross-platform mobile app using Flutter for team management</li>
+              <li>Implemented modern frontend architectures with React and component-based design</li>
+              <li>Collaborated with design teams to produce polished UI/UX experiences</li>
+              <li>Integrated Firebase for real-time data, authentication, and cloud storage</li>
+            </ul>
+          </div>
+          <div class="timeline-item">
+            <h3>Freelance Web Developer</h3>
+            <p class="company">Self-employed</p>
+            <p class="duration">2023 – Present · Part-time</p>
+            <ul>
+              <li>Built custom websites and landing pages for small businesses</li>
+              <li>Delivered full-stack solutions using PHP, MySQL, and JavaScript</li>
+              <li>Managed client communications, requirements gathering, and project delivery</li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
@@ -96,8 +116,11 @@
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2024 Laurenz Cultura. All rights reserved.</p>
+    <p>&copy; <span class="footer-year"></span> Laurenz Cultura. All rights reserved.</p>
   </footer>
+
+  <!-- Back to Top -->
+  <button id="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
 
   <!-- Scripts -->
   <script src="assets/js/script.js"></script>

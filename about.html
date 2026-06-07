@@ -4,14 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About Laurenz Cultura — A passionate web and mobile developer with expertise in modern frontend technologies and UI/UX design.">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Mac Laurenz Cultura | About.</title>
+    <title>Mac Laurenz Cultura | About</title>
 </head>
 
 <body>
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress"></div>
+
     <!-- Navigation -->
     <nav>
         <div class="logo">
@@ -21,6 +26,7 @@
             <div class="links">
                 <a href="index.html">Home</a>
                 <a href="about.html">About</a>
+                <a href="projects.html">Projects</a>
                 <a href="tech-stack.html">Tech Stack</a>
                 <a href="services.html">Services</a>
                 <a href="certifications.html">Certifications</a>
@@ -32,6 +38,7 @@
             <div class="links">
                 <a href="index.html">Home</a>
                 <a href="about.html">About</a>
+                <a href="projects.html">Projects</a>
                 <a href="tech-stack.html">Tech Stack</a>
                 <a href="services.html">Services</a>
                 <a href="certifications.html">Certifications</a>
@@ -45,21 +52,83 @@
     <section id="about">
         <div class="about-container">
             <h2 data-aos="fade-up" data-aos-duration="1500">About Me</h2>
-            <div class="about-content" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
-                <p>I am a dedicated web developer with a strong foundation in front-end technologies, passionate about
-                    building seamless and engaging user experiences through clean, efficient code. In addition to web
-                    development, I am designing and developing a mobile app for our esports team, focusing on intuitive
-                    UI/UX to enhance user engagement.</p>
-                <p>Constantly exploring new technologies and best practices, I strive to create high-quality, innovative
-                    digital solutions that are both functional and visually compelling.</p>
+
+            <!-- Stats Row -->
+            <div class="about-stats" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
+                <div class="stat-card">
+                    <div class="stat-number">3+</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">10+</div>
+                    <div class="stat-label">Projects Completed</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">5+</div>
+                    <div class="stat-label">Certifications</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">3</div>
+                    <div class="stat-label">Core Specialties</div>
+                </div>
+            </div>
+
+            <!-- Layout: Text + Education -->
+            <div class="about-layout" style="margin-top: 2.5rem;" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+                <!-- Bio Text -->
+                <div class="about-text-block">
+                    <p>I am a dedicated web developer with a strong foundation in front-end technologies, passionate about
+                        building seamless and engaging user experiences through clean, efficient code. In addition to web
+                        development, I am designing and developing a mobile app for our esports team, focusing on intuitive
+                        UI/UX to enhance user engagement.</p>
+                    <p>Constantly exploring new technologies and best practices, I strive to create high-quality, innovative
+                        digital solutions that are both functional and visually compelling.</p>
+                    <!-- CV Download -->
+                    <div style="margin-top: 1.5rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+                        <a href="assets/files/laurenz-cultura-cv.pdf" download class="btn-primary" style="text-decoration: none;">
+                            <i class="fa-solid fa-download"></i> Download CV
+                        </a>
+                        <a href="contact.html" class="btn-outline" style="text-decoration: none;">
+                            <i class="fa-solid fa-envelope"></i> Get In Touch
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Education -->
+                <div class="about-education">
+                    <h3><i class="fa-solid fa-graduation-cap" style="margin-right: 0.5rem;"></i>Education</h3>
+                    <div class="education-item">
+                        <div class="education-icon">
+                            <i class="fa-solid fa-university"></i>
+                        </div>
+                        <div class="education-info">
+                            <div class="school">St. Dominic College of Asia</div>
+                            <div class="degree">College</div>
+                            <div class="year">2023 – Present</div>
+                        </div>
+                    </div>
+                    <div class="education-item">
+                        <div class="education-icon">
+                            <i class="fa-solid fa-school"></i>
+                        </div>
+                        <div class="education-info">
+                            <div class="school">Del Pilar Academy</div>
+                            <div class="degree">Junior & Senior High School</div>
+                            <div class="year">2017 – 2023</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Laurenz Cultura. All rights reserved.</p>
+        <p>&copy; <span class="footer-year"></span> Laurenz Cultura. All rights reserved.</p>
     </footer>
+
+    <!-- Back to Top -->
+    <button id="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
 
     <!-- Scripts -->
     <script src="assets/js/script.js"></script>
